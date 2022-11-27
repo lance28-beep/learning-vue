@@ -37,3 +37,31 @@ Prerequisites:
 - ES6+ features
 - A knowledge of modern javascript.
 
+
+Four ways to add Vue
+* CDN Package
+><script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+* NPM
+>npm install vue@next
+- preferred approach over CDN when building large scale applications with Vue.
+* Vue CLI
+- Vue provides an official CLI for quickly scaffolding single page applications.
+> npm install -g @vue/cli
+> vue create <project-name>
+* Vite
+- An opinionated web dev build tool that serves your code via native ES Module imports.
+- Your code is served at a lightning fast speed and you get nearly instant hot module replacement.
+> npm init vite-app <project-name>
+
+# Approach chosen for this series
+CDN - incorporate Vue into a really old legacy code base or quickly prototype.
+npm - is the recommended approach for building large scale applications with Vue.
+Vue CLI - Takes only a few minutes to get up and running with hot reload, lint-on-save, and production-ready builds.
+Vite -  its currently in the beta version
+
+.Vue File
+- A *.vue file is a custom file format that uses HTML-like syntax to describe a portion of the UI.
+- Each *.vue file consist of three types of top-level language blocks.
+> <template></template>
+> <script></script>
+> <style></style>
